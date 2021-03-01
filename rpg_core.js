@@ -3023,7 +3023,8 @@ Input.keyMapper = {
     100: 'left',    // numpad 4
     102: 'right',   // numpad 6
     104: 'up',      // numpad 8
-    120: 'debug'    // F9
+    120: 'debug',    // F9
+    69:'bag'        //E
 };
 
 /**
@@ -3263,6 +3264,7 @@ Input._shouldPreventDefault = function(keyCode) {
     case 38:    // up arrow
     case 39:    // right arrow
     case 40:    // down arrow
+    case 69:    //E key
         return true;
     }
     return false;

@@ -63,7 +63,7 @@ DataManager._databaseFiles = [
     { name: '$dataMapInfos',     src: 'MapInfos.json'     },
     { name: '$dataMission',      src: 'MissionList.json'  }
 ];
-
+//在Scene_Boot.prototype.create处调用
 DataManager.loadDatabase = function() {
     var test = this.isBattleTest() || this.isEventTest();
     var prefix = test ? 'Test_' : '';
